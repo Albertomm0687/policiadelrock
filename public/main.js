@@ -829,7 +829,7 @@ var BlogService = /** @class */ (function () {
     function BlogService(http) {
         this.http = http;
         //url = "http://localhost:3000/blog/" //<-----------checar esto
-        this.url = "/blog";
+        this.url = "/blog/";
     }
     BlogService.prototype.getAllBlogs = function () {
         return this.http.get(this.url).toPromise()
